@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.static(path.join(__dirname,'html_files')));
 
 app.use(express.json());
-const data = require(__dirname + '/user_id.json');
+const data = require(__dirname + '/server_id.json');
 const student_data = mysql.createConnection(data);
 
 student_data.connect((err) => {
