@@ -1,0 +1,19 @@
+{
+  "name": "rest_server",
+  "version": "1.0.0",
+  "description": "REST API",
+  "main": "main.js",
+  "scripts": {
+    "test": "nodemon main.js"
+  },
+  "keywords": [],
+  "author": "Soutik Gayen",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "mysql2": "^2.3.3",
+    "path": "^0.12.7"
+  }
+}
