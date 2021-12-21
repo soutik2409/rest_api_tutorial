@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Get Student Info</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Soutik Gayen">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+               
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1 class = "logo"></h1>
+                <ul>
+                    <li><a href="./StudentInfo">StudentInfo</a></li>
+                    <li><a href="./NewStudent">NewStudent</a></li>
+                    <li><a href="#">UpdateStudentInfo</a></li>
+                    <li><a href="./DeleteStudent">RemoveStudent</a></li>
+                </ul>
+            </div>
+        </header>
+        <div>
+            <h1>Enter the updated student details: </h1>
+            <form action="./UpdateStudentInfo" method="post">
+                <table>
+                    <tr>
+                        <td>Roll No :</td>
+                        <td>
+                            <input type="text" name="RollNo">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Name :</td>
+                        <td>
+                            <input type="text" name="Name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Address :</td>
+                        <td>
+                            <input type="text" name="Address">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Contact No :</td>
+                        <td>
+                            <input type="text" name="ContactNo">
+                        </td>
+                    </tr>
+                </table>
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+        <div id="result"></div>   
+        
+    </body>
+</html>

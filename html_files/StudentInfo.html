@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Get Student Info</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Soutik Gayen">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1 class = "logo"></h1>
+                <ul>
+                    <li><a href="#">StudentInfo</a></li>
+                    <li><a href="./NewStudent">NewStudent</a></li>
+                    <li><a href="./UpdateStudentInfo">UpdateStudentInfo</a></li>
+                    <li><a href="./DeleteStudent">RemoveStudent</a></li>
+                </ul>
+            </div>
+        </header>
+        <div>
+            <label for="rollno">Enter Student Roll No : </label><br>
+            <input type="text" id="roll">
+            <button id="Studentdetails">Submit</button>
+        </div>
+        <div id="result"></div>
+        <script type="text/javascript">
+            $(document).ready( () => {
+                $('#Studentdetails').click( () => {
+                    $.getJSON($(location).attr("href")+"/"+$('#roll').val(), (result,status) => {
+                        let str="";
+                        for(const prop in result)
+                        {
+                            str+=prop + " : " + result[prop]+"<br>";
+                        }
+                        $('#result').html(str);
+                    });
+                });
+            });
+        </script>
+        
+    </body>
+</html>
