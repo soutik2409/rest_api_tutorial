@@ -1,0 +1,6 @@
+{
+    "host": "localhost",
+    "user" : "SOUTIK",
+    "password" : "123",
+    "database" : "rest_students"
+}
