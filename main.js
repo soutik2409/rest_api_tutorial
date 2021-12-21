@@ -9,12 +9,8 @@ app.use(cors());
 app.use(express.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
-const student_data = mysql.createConnection({
-    host: 'localhost',
-    user: 'SOUTIK',
-    password: '123',
-    database: 'rest_students'
-});
+const data = require(__dirname + '/server_id.json');
+const student_data = mysql.createConnection(data);
 
 student_data.connect((err) => {
     if (err) throw err;
