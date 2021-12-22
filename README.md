@@ -4,5 +4,6 @@ a very basic rest api which can add new student , view student details , update 
 ## Instructions: 
 
 $ npm install
+
 $ npm run test
 
