@@ -11,4 +11,4 @@ $ npm install
 
 $ npm run test
 
-open localhost:8080 in browser and get started
+open "localhost:8080" in browser and get started
